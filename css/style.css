@@ -9,10 +9,6 @@ body{
     line-height: 1.7rem;
 }
 
-h1,h2,h3{
-    padding-bottom: 1.25rem;
-}
-
 ul{
     list-style: none;
 }
@@ -29,10 +25,19 @@ a{
     margin: auto;
 }
 .btn{
+    display:inline-block;
     padding:10px 20px;
     background-color: #93cb52;
     border-radius: 5%;
-    border:none;
+    border:none; 
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #93cb60;
+}
+.btn-dark{
+    background-color: #444;
+    padding:3px;
 }
 .text-green{
     color:#93cb52;
@@ -41,10 +46,13 @@ a{
 /* navbar  */
 .navbar{
     background-color: #333;
+    position: sticky;
+    top: 0;
 }
-.logo{
+.logo,
+footer h3{
     text-align: center;
-    padding-top: 20px;
+    padding: 20px 0;
 }
 .menu{
     display: flex;
@@ -76,5 +84,102 @@ a{
     font-size: 1.5rem;
     line-height: 1.2;
     padding-bottom: 1.25rem;
-  text-align: center;
+    text-align: center;
+}
+
+/* what we do */
+
+#what h2{
+    padding: 1rem 0;
+    text-align: center;
+}
+.info i{
+    background-color: #93cb52;
+    border-radius: 50%;
+    padding:1rem;
+    margin-right:1.25rem;
+    text-align: center;
+}
+
+.info{
+    display:flex;
+    padding:2rem 0;
+    align-items:center;
+    color:#333
+}
+
+.info p{
+    padding: 0.75rem 0;
+}
+
+/* who are we  */
+
+#who{
+    background-color: #333;
+    color: #f4f4f4;
+    display: flex;
+}
+ .team{
+    background:url('../img/people.jpg') no-repeat center center/cover;
+    flex:1;
+}
+ .team-info{
+    flex:1;
+    padding:1.25rem;
+}
+
+.team-info p{
+    padding:1rem 0;
+}
+
+.team-info li{
+  padding:0.5rem 0;
+}
+
+/* clients */
+.clients{
+    text-align: center;
+    padding : 2rem 0 2rem 1rem;
+}
+.photo-clients{
+    padding: 2rem 0;
+    display: flex;
+    flex:1;
+}
+.photo-clients img{
+    display: block;
+    width:60%;
+}
+
+/* contact us form  */
+#contact{
+    background-color: #93cb52;
+    color: #f4f4f4;
+}
+.contact{
+    padding-top:2rem;
+    max-width: 80%;
+    margin: auto;
+}
+.contact *{
+    display: block;
+    width: 100%;
+    padding: 5px 0;
+}
+
+.contact .btn-dark{
+    margin: 10px 0;
+    text-align: center;
+}
+.contact form{
+    padding-bottom: 1rem;
+}
+
+/* footer  */
+footer{
+    background-color: #333;
+}
+footer h3{
+    color: #f4f4f4;
+    font-size: 1rem;
 }
